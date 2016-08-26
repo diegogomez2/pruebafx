@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane id="AnchorPane" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="com.airhacks.followme.principal.gruas.ingresarGruas.IngresarGruasPresenter">
+   <children>
+      <BorderPane prefHeight="529.0" prefWidth="1094.0">
+         <bottom>
+            <HBox alignment="CENTER_RIGHT" prefHeight="6.0" prefWidth="388.0" spacing="10.0">
+               <children>
+                  <Button mnemonicParsing="false" text="Aceptar" />
+                  <Button mnemonicParsing="false" text="Cancelar" />
+               </children>
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+            </HBox>
+         </bottom>
+         <left>
+            <VBox prefHeight="564.0" prefWidth="368.0" spacing="5.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Label text="Patente" />
+                  <TextField />
+                  <Label text="Descripción" />
+                  <TextField />
+                  <Label text="Modelo" />
+                  <TextField />
+                  <Label text="Marca" />
+                  <TextField />
+                  <Label text="Número de motor" />
+                  <TextField />
+                  <Label text="Número de serie" />
+                  <TextField />
+                  <Label text="Número de chasis" />
+                  <TextField />
+                  <Label text="Horómetro" />
+                  <TextField />
+                  <Label text="Toneladas" />
+                  <ChoiceBox maxWidth="1.7976931348623157E308" prefWidth="150.0" />
+               </children>
+               <BorderPane.margin>
+                  <Insets />
+               </BorderPane.margin>
+               <padding>
+                  <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+               </padding>
+            </VBox>
+         </left>
+         <center>
+            <VBox spacing="5.0">
+               <children>
+                  <TitledPane animated="false" collapsible="false" text="Tipo de neumático">
+                    <content>
+                      <AnchorPane prefHeight="63.0" prefWidth="296.0">
+                           <children>
+                              <VBox layoutX="6.0" layoutY="6.0" maxWidth="1.7976931348623157E308" prefHeight="56.0" prefWidth="292.0" spacing="5.0" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="3.0" AnchorPane.rightAnchor="1.0" AnchorPane.topAnchor="3.0">
+                                 <children>
+                                    <ChoiceBox maxWidth="1.7976931348623157E308" />
+                                    <ChoiceBox maxWidth="1.7976931348623157E308" />
+                                 </children>
+                                 <padding>
+                                    <Insets bottom="-10.0" />
+                                 </padding>
+                              </VBox>
+                           </children>
+                           <padding>
+                              <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+                           </padding>
+                        </AnchorPane>
+                    </content>
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                  </TitledPane>
+                  <HBox spacing="5.0">
+                     <children>
+                        <VBox spacing="5.0" HBox.hgrow="ALWAYS">
+                           <children>
+                              <Label text="Ancho" />
+                              <TextField />
+                           </children>
+                        </VBox>
+                        <VBox spacing="5.0" HBox.hgrow="ALWAYS">
+                           <children>
+                              <Label text="Largo" />
+                              <TextField />
+                           </children>
+                        </VBox>
+                     </children>
+                  </HBox>
+                  <Label text="Medida neumáticos delanteros" />
+                  <TextField />
+                  <Label text="KM/H última mantención" />
+                  <TextField />
+                  <Label text="Tipo de combistible" />
+                  <ChoiceBox maxWidth="1.7976931348623157E308" prefWidth="150.0" />
+                  <TitledPane animated="false" collapsible="false" prefHeight="153.0" prefWidth="392.0" text="Observaciones">
+                    <content>
+                        <TextArea layoutX="6.0" layoutY="-32.0" prefHeight="145.0" prefWidth="390.0" />
+                    </content>
+                  </TitledPane>
+               </children>
+               <padding>
+                  <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+               </padding>
+            </VBox>
+         </center>
+         <right>
+            <VBox prefHeight="484.0" prefWidth="318.0" spacing="5.0">
+               <children>
+                  <Label text="Mástil" />
+                  <ChoiceBox maxWidth="1.7976931348623157E308" prefWidth="150.0" />
+                  <Label text="Alttura mástil (cm)" />
+                  <TextField />
+                  <Label text="Peso grúas (cm)" />
+                  <TextField />
+                  <HBox spacing="5.0">
+                     <children>
+                        <VBox spacing="5.0" HBox.hgrow="ALWAYS">
+                           <children>
+                              <Label text="Largo uñas (cm)" />
+                              <TextField />
+                           </children>
+                        </VBox>
+                        <VBox spacing="5.0" HBox.hgrow="ALWAYS">
+                           <children>
+                              <Label text="Altura levante (cm)" />
+                              <TextField />
+                           </children>
+                        </VBox>
+                     </children>
+                  </HBox>
+                  <Label text="Medida neumáticos traseros" />
+                  <TextField />
+                  <TitledPane animated="false" collapsible="false" prefHeight="208.0" prefWidth="312.0" text="Fechas">
+                    <content>
+                        <VBox layoutX="9.6" layoutY="19.6" prefHeight="116.0" prefWidth="305.0" spacing="5.0" AnchorPane.bottomAnchor="48.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="8.0" AnchorPane.topAnchor="10.0">
+                           <children>
+                              <Label text="Revisión técnica" />
+                              <DatePicker maxWidth="1.7976931348623157E308" />
+                              <Label text="Última mantención" />
+                              <DatePicker maxWidth="1.7976931348623157E308" />
+                              <Label text="Ingreso" />
+                              <DatePicker maxWidth="1.7976931348623157E308" />
+                           </children>
+                        </VBox>
+                    </content>
+                  </TitledPane>
+               </children>
+               <BorderPane.margin>
+                  <Insets />
+               </BorderPane.margin>
+               <padding>
+                  <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+               </padding>
+            </VBox>
+         </right>
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding>
+      </BorderPane>
+   </children>
+</AnchorPane>

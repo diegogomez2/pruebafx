@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" fx:id="vista" maxHeight="563.0" maxWidth="835.0" prefHeight="563.0" prefWidth="835.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.airhacks.followme.principal.operacionesyservicios.clientes.detalleClientes.DetalleClientesPresenter">
+   <children>
+      <VBox AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <HBox prefHeight="485.0" prefWidth="829.0" spacing="4.0" VBox.vgrow="ALWAYS">
+               <children>
+                  <TitledPane fx:id="titledInfo" animated="false" collapsible="false" prefHeight="479.0" prefWidth="356.0" text="Información" HBox.hgrow="ALWAYS">
+                     <content>
+                        <VBox prefHeight="473.0" prefWidth="354.0" spacing="10.0">
+                           <children>
+                              <Label text="Rut" />
+                              <TextField fx:id="rut" editable="false" />
+                              <Label text="Contacto" />
+                              <TextField fx:id="con" editable="false" layoutX="373.0" layoutY="201.0" />
+                              <Label text="Razón social" />
+                              <TextField fx:id="rzn" editable="false" layoutX="373.0" layoutY="156.0" />
+                              <Label text="Giro" />
+                              <TextField fx:id="gir" editable="false" layoutX="472.0" layoutY="243.0" />
+                              <Label text="Correo" />
+                              <TextField fx:id="cor" editable="false" layoutX="305.0" layoutY="243.0" />
+                              <Label text="Teléfono" />
+                              <TextField fx:id="tel" editable="false" layoutX="379.0" layoutY="53.0" />
+                              <Label text="Celular" />
+                              <TextField fx:id="cel" editable="false" layoutX="472.0" layoutY="175.0" />
+                           </children>
+                           <opaqueInsets>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </opaqueInsets>
+                        </VBox>
+                     </content>
+                  </TitledPane>
+                  <VBox HBox.hgrow="ALWAYS">
+                     <children>
+                        <TitledPane fx:id="titledDom" animated="false" collapsible="false" text="Domicilio">
+                           <content>
+                              <VBox spacing="10.0">
+                                 <children>
+                                    <Label text="Dirección" />
+                                    <TextField fx:id="dir" editable="false" GridPane.rowIndex="1" VBox.vgrow="ALWAYS">
+                                       <VBox.margin>
+                                          <Insets />
+                                       </VBox.margin>
+                                    </TextField>
+                                    <Label text="Región" GridPane.rowIndex="2" />
+                                    <ComboBox fx:id="reg" maxWidth="1.7976931348623157E308" mouseTransparent="true" prefWidth="150.0" />
+                                    <Label text="Ciudad" GridPane.rowIndex="4" />
+                                    <ComboBox fx:id="ciu" maxWidth="1.7976931348623157E308" mouseTransparent="true" prefWidth="150.0" />
+                                    <Label text="Comuna" GridPane.rowIndex="6" />
+                                    <ComboBox fx:id="com" maxWidth="1.7976931348623157E308" mouseTransparent="true" prefWidth="150.0" />
+                                 </children>
+                              </VBox>
+                           </content>
+                        </TitledPane>
+                        <TitledPane fx:id="titledObs" animated="false" collapsible="false" text="Observaciones" VBox.vgrow="ALWAYS">
+                           <content>
+                              <TextArea fx:id="obs" editable="false" />
+                           </content>
+                           <padding>
+                              <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+                           </padding>
+                        </TitledPane>
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+            <HBox nodeOrientation="RIGHT_TO_LEFT" spacing="10.0">
+               <children>
+                  <Button fx:id="OK" mnemonicParsing="false" onAction="#ok" prefHeight="25.0" prefWidth="99.0" text="OK" />
+               </children>
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+   <padding>
+      <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+   </padding>
+</AnchorPane>

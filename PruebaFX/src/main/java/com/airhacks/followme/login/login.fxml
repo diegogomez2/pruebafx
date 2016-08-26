@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" maxWidth="420.0" prefHeight="221.0" prefWidth="440.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.airhacks.followme.login.LoginPresenter">
+   <children>
+      <BorderPane AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <bottom>
+            <Button fx:id="btnIngresar" mnemonicParsing="false" onAction="#ingresar" prefHeight="46.0" prefWidth="410.0" text="Ingresar" textAlignment="CENTER" BorderPane.alignment="CENTER">
+               <font>
+                  <Font size="17.0" />
+               </font>
+               <BorderPane.margin>
+                  <Insets />
+               </BorderPane.margin>
+            </Button>
+         </bottom>
+         <center>
+            <VBox fx:id="vbox" alignment="TOP_CENTER" spacing="20.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Label text="LOGIN">
+                     <font>
+                        <Font name="Open Sans" size="17.0" />
+                     </font>
+                     <textFill>
+                        <LinearGradient cycleMethod="REFLECT" endX="1.0" endY="1.0" startX="0.9904761904761905" startY="0.41904761904761906">
+                           <stops>
+                              <Stop color="#0b1fd9" />
+                              <Stop color="WHITE" offset="1.0" />
+                           </stops>
+                        </LinearGradient>
+                     </textFill>
+                  </Label>
+                  <TextField fx:id="txtUsuario" onKeyPressed="#ingresarEnter" prefHeight="37.0" prefWidth="420.0" promptText="Nombre de usuario" GridPane.columnIndex="1" />
+                  <PasswordField fx:id="txtPassword" onKeyPressed="#ingresarEnter" prefHeight="37.0" promptText="Contraseña" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+               </children>
+            </VBox>
+         </center>
+         <padding>
+            <Insets bottom="20.0" left="5.0" right="5.0" top="5.0" />
+         </padding>
+      </BorderPane>
+   </children>
+</AnchorPane>

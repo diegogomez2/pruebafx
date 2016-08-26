@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" fx:id="vista" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.airhacks.followme.principal.compras.proveedores.detalle.DetalleProveedoresPresenter">
+   <children>
+      <BorderPane AnchorPane.bottomAnchor="3.0" AnchorPane.leftAnchor="3.0" AnchorPane.rightAnchor="6.0" AnchorPane.topAnchor="0.0">
+         <bottom>
+            <HBox nodeOrientation="RIGHT_TO_LEFT" spacing="10.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Button fx:id="ok" mnemonicParsing="false" onAction="#ok" prefHeight="25.0" prefWidth="64.0" text="OK" />
+               </children>
+               <padding>
+                  <Insets bottom="4.0" left="4.0" right="4.0" top="10.0" />
+               </padding>
+            </HBox>
+         </bottom>
+         <center>
+            <AnchorPane>
+               <children>
+                  <HBox spacing="4.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <VBox spacing="3.0">
+                           <children>
+                              <TitledPane fx:id="titledInfo" text="Información" HBox.hgrow="ALWAYS">
+                                 <content>
+                                    <VBox prefHeight="366.0" prefWidth="354.0" spacing="10.0">
+                                       <children>
+                                          <Label text="Rut" />
+                                          <TextField fx:id="rut" />
+                                          <Label text="Contacto" />
+                                          <TextField fx:id="con" layoutX="373.0" layoutY="201.0" />
+                                          <Label text="Razón social" />
+                                          <TextField fx:id="rzn" layoutX="373.0" layoutY="156.0" />
+                                          <Label text="Giro" />
+                                          <TextField fx:id="gir" layoutX="472.0" layoutY="243.0" />
+                                          <Label text="Correo" />
+                                          <TextField fx:id="cor" layoutX="305.0" layoutY="243.0" />
+                                          <Label text="Teléfono" />
+                                          <TextField fx:id="tel" layoutX="379.0" layoutY="53.0" />
+                                       </children>
+                                       <opaqueInsets>
+                                          <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                       </opaqueInsets>
+                                    </VBox>
+                                 </content>
+                              </TitledPane>
+                              <TitledPane animated="false" text="Pago">
+                                 <content>
+                                    <VBox spacing="10.0">
+                                       <children>
+                                          <Label text="Forma de pago" />
+                                          <ComboBox fx:id="form" maxWidth="1.7976931348623157E308" prefWidth="150.0" promptText="--Seleccione una forma de pago--" />
+                                          <Label text="Medio de pago" />
+                                          <ComboBox fx:id="med" maxWidth="1.7976931348623157E308" prefWidth="150.0" promptText="--Seleccione un medio de pago--" />
+                                       </children>
+                                    </VBox>
+                                 </content>
+                              </TitledPane>
+                           </children>
+                        </VBox>
+                        <VBox spacing="3.0" HBox.hgrow="ALWAYS">
+                           <children>
+                              <TitledPane fx:id="titledDom" text="Domicilio">
+                                 <content>
+                                    <VBox spacing="10.0">
+                                       <children>
+                                          <Label text="Dirección" />
+                                          <TextField fx:id="dir" GridPane.rowIndex="1" VBox.vgrow="ALWAYS">
+                                             <VBox.margin>
+                                                <Insets />
+                                             </VBox.margin>
+                                          </TextField>
+                                          <Label text="Región" GridPane.rowIndex="2" />
+                                          <ComboBox fx:id="reg" maxWidth="1.7976931348623157E308" prefWidth="150.0" promptText="--Seleccione una región--" />
+                                          <Label text="Ciudad" GridPane.rowIndex="4" />
+                                          <ComboBox fx:id="ciu" maxWidth="1.7976931348623157E308" prefWidth="150.0" promptText="--Seleccione una ciudad--" />
+                                          <Label text="Comuna" GridPane.rowIndex="6" />
+                                          <ComboBox fx:id="com" maxWidth="1.7976931348623157E308" prefWidth="150.0" promptText="--Seleccione una comuna--" />
+                                       </children>
+                                    </VBox>
+                                 </content>
+                              </TitledPane>
+                              <TitledPane fx:id="titledObs" prefHeight="284.0" prefWidth="449.0" text="Observaciones" VBox.vgrow="ALWAYS">
+                                 <content>
+                                    <TextArea fx:id="obs" prefHeight="178.0" prefWidth="447.0" wrapText="true" />
+                                 </content>
+                              </TitledPane>
+                           </children>
+                        </VBox>
+                     </children>
+                  </HBox>
+               </children>
+            </AnchorPane>
+         </center>
+         <padding>
+            <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+         </padding>
+      </BorderPane>
+   </children>
+   <padding>
+      <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+   </padding>
+</AnchorPane>

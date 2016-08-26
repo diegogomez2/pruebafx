@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.airhacks.followme.principal.compras.compras.ingresar.IngresarComprasPresenter">
+   <children>
+      <BorderPane prefHeight="598.0" prefWidth="730.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <bottom>
+            <HBox alignment="CENTER_RIGHT" spacing="10.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#agregar" text="Aceptar" />
+                  <Button mnemonicParsing="false" onAction="#cancelar" text="Cancelar" />
+               </children>
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+            </HBox>
+         </bottom>
+         <center>
+            <AnchorPane>
+               <children>
+                  <ScrollPane fx:id="scrollPane" prefHeight="563.0" prefViewportHeight="365.0" prefViewportWidth="600.0" prefWidth="724.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <content>
+                        <AnchorPane>
+                           <children>
+                              <VBox spacing="10.0">
+                                 <children>
+                                    <GridPane fx:id="grid" hgap="10.0" prefWidth="694.0" BorderPane.alignment="CENTER">
+                                      <columnConstraints>
+                                          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                      </columnConstraints>
+                                      <rowConstraints>
+                                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints maxHeight="20.0" minHeight="0.0" prefHeight="0.0" vgrow="SOMETIMES" />
+                                          <RowConstraints maxHeight="20.0" minHeight="0.0" prefHeight="2.0" vgrow="SOMETIMES" />
+                                          <RowConstraints fillHeight="false" maxHeight="5.0" minHeight="0.0" prefHeight="0.0" vgrow="ALWAYS" />
+                                          <RowConstraints maxHeight="20.0" minHeight="0.0" prefHeight="0.0" vgrow="SOMETIMES" />
+                                          <RowConstraints maxHeight="20.0" minHeight="0.0" prefHeight="0.0" vgrow="SOMETIMES" />
+                                          <RowConstraints maxHeight="20.0" minHeight="0.0" prefHeight="0.0" vgrow="SOMETIMES" />
+                                          <RowConstraints maxHeight="20.0" minHeight="0.0" prefHeight="0.0" vgrow="SOMETIMES" />
+                                          <RowConstraints maxHeight="20.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                      </rowConstraints>
+                                       <children>
+                                          <Label text="Tipo de DTE" />
+                                          <Label text="Rut proveedor" GridPane.rowIndex="2" />
+                                          <Label text="Folio documento" GridPane.columnIndex="1" />
+                                          <Label text="Razón social" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                                          <Label text="Giro" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                                          <Label text="Dirección" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+                                          <ComboBox fx:id="tipo" maxWidth="1.7976931348623157E308" prefWidth="150.0" promptText="--Seleccione un tipo--" GridPane.rowIndex="1" />
+                                          <ComboBox fx:id="rut" editable="true" maxWidth="1.7976931348623157E308" prefWidth="150.0" promptText="--Seleccione un proveedor--" GridPane.rowIndex="3" />
+                                          <Label text="Contacto" GridPane.rowIndex="4" />
+                                          <Label text="Fecha de ingreso" GridPane.columnIndex="2" />
+                                          <Label text="Fecha de pago" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+                                          <TextField fx:id="folio" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                                          <TextField fx:id="gir" editable="false" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                                          <TextField fx:id="dir" editable="false" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+                                          <TextField fx:id="con" editable="false" GridPane.rowIndex="5" />
+                                          <TextField fx:id="rzn" editable="false" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                                          <DatePicker fx:id="fecIn" maxWidth="1.7976931348623157E308" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                                          <DatePicker fx:id="fecPago" maxWidth="1.7976931348623157E308" GridPane.columnIndex="2" GridPane.rowIndex="5" />
+                                          <Label text="Orden de compra" GridPane.rowIndex="8" />
+                                          <Label text="Forma de pago" GridPane.rowIndex="6" />
+                                          <ComboBox fx:id="form" maxWidth="1.7976931348623157E308" prefWidth="150.0" promptText="--Seleccione una forma de pago--" GridPane.rowIndex="7">
+                                          </ComboBox>
+                                          <TextField fx:id="ord" GridPane.rowIndex="9" />
+                                          <Label text="Asunto" GridPane.columnIndex="1" GridPane.rowIndex="8" />
+                                          <Label text="Número de cuotas" GridPane.columnIndex="2" GridPane.rowIndex="8" />
+                                          <TextField fx:id="asun" GridPane.columnIndex="1" GridPane.rowIndex="9" />
+                                          <Label text="Observaciones" GridPane.rowIndex="10" />
+                                          <TextArea fx:id="obs" prefHeight="200.0" prefWidth="200.0" wrapText="true" GridPane.columnSpan="3" GridPane.rowIndex="11" GridPane.rowSpan="2" />
+                                          <Label text="Medio de pago" GridPane.rowIndex="13" />
+                                          <Label text="Banco" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+                                          <Label text="Cantidad" GridPane.columnIndex="1" GridPane.rowIndex="13" />
+                                          <TextField fx:id="ban" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+                                          <Label text="Número de tarjeta de crédito" GridPane.columnIndex="2" GridPane.rowIndex="6" />
+                                          <TextField fx:id="numTC" GridPane.columnIndex="2" GridPane.rowIndex="7" />
+                                          <ComboBox fx:id="med" maxWidth="1.7976931348623157E308" prefWidth="150.0" promptText="--Seleccione un medio de pago--" GridPane.rowIndex="21" />
+                                          <Slider GridPane.columnIndex="1" GridPane.rowIndex="21" />
+                                          <Slider fx:id="cuotas" GridPane.columnIndex="2" GridPane.rowIndex="9" />
+                                       </children>
+                                    </GridPane>
+                                    <Label fx:id="txtCuotas" text="Cheques" />
+                                    <TableView fx:id="tablaCuotas" editable="true" fixedCellSize="1.0" prefHeight="200.0" prefWidth="200.0">
+                                       <columnResizePolicy>
+                                          <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                                       </columnResizePolicy></TableView>
+                                    <Label fx:id="txtProductos" text="Productos" />
+                                    <TableView fx:id="tablaDetalle" editable="true" prefHeight="200.0" prefWidth="200.0">
+                                       <columnResizePolicy>
+                                          <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                                       </columnResizePolicy></TableView>
+                                    <HBox alignment="TOP_RIGHT" spacing="3.0">
+                                       <children>
+                                          <Button mnemonicParsing="false" onAction="#addRow" text="+" />
+                                          <Button mnemonicParsing="false" onAction="#remRow" text="-" />
+                                       </children>
+                                    </HBox>
+                                 </children>
+                              </VBox>
+                           </children>
+                        </AnchorPane>
+                     </content>
+                     <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </padding>
+                  </ScrollPane>
+               </children>
+               <BorderPane.margin>
+                  <Insets />
+               </BorderPane.margin>
+            </AnchorPane>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>

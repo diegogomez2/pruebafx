@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="618.0" prefWidth="892.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.airhacks.followme.principal.PrincipalPresenter">
+   <children>
+      <BorderPane prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <top>
+            <MenuBar>
+              <menus>
+                <Menu mnemonicParsing="false" text="Archivo">
+                  <items>
+                    <MenuItem mnemonicParsing="false" text="Agregar usuario" />
+                        <MenuItem mnemonicParsing="false" text="Cambiar contraseña" />
+                        <MenuItem mnemonicParsing="false" text="Mostrar usuarios" />
+                  </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Tarifas">
+                  <items>
+                    <MenuItem mnemonicParsing="false" text="Mostrar tarifas" />
+                  </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Operaciones y servicios">
+                  <items>
+                    <MenuItem fx:id="itemOperaciones" mnemonicParsing="false" onAction="#irVistaOperaciones" text="Mostrar operaciones y servicios" />
+                  </items>
+                </Menu>
+                  <Menu mnemonicParsing="false" text="Compras">
+                    <items>
+                      <MenuItem fx:id="itemCompras" mnemonicParsing="false" onAction="#irVistaCompras" text="Mostrar compras" />
+                    </items>
+                  </Menu>
+              </menus>
+            </MenuBar>
+         </top>
+         <center>
+            <AnchorPane BorderPane.alignment="CENTER">
+               <children>
+                  <TabPane fx:id="tabPanel" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" BorderPane.alignment="CENTER">
+                    <tabs>
+                      <Tab fx:id="tabClientes" text="Clientes">
+                         <content>
+                              <fx:include fx:id="clientes" source="operacionesyservicios/clientes/clientes.fxml" />
+                         </content>
+                      </Tab>
+                      <Tab fx:id="tabGruas" text="Grúas">
+                        <content>
+                              <fx:include source="operacionesyservicios/gruas/gruas.fxml" />
+                        </content>
+                      </Tab>
+                        <Tab fx:id="tabProveedores" text="Proveedores">
+                           <content>
+                              <fx:include source="compras/proveedores/proveedores.fxml" />
+                           </content>
+                        </Tab>
+                        <Tab fx:id="tabCompras" text="Compras">
+                           <content>
+                              <fx:include source="compras/compras/compras.fxml" />
+                           </content>
+                        </Tab>
+                    </tabs>
+                  </TabPane>
+               </children>
+            </AnchorPane>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>

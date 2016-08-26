@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.web.*?>
+<?import javafx.geometry.*?>
+<?import javafx.embed.swing.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<BorderPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.airhacks.followme.principal.gruas.ingresarGruas.IngresarGruasnewController">
+   <center>
+      <AnchorPane>
+         <children>
+            <GridPane hgap="10.0" vgap="10.0" BorderPane.alignment="CENTER">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Label text="Patente" />
+                  <Label text="Modelo" GridPane.columnIndex="3" />
+                  <Label text="Observaciones" GridPane.columnSpan="3" GridPane.rowIndex="14" />
+                  <TextField GridPane.rowIndex="1" />
+                  <TextField GridPane.columnIndex="3" GridPane.rowIndex="1" />
+                  <TextArea prefHeight="200.0" prefWidth="200.0" wrapText="true" GridPane.columnSpan="3" GridPane.rowIndex="15" GridPane.rowSpan="2" />
+                  <Label text="Fecha de ingreso" GridPane.rowIndex="12" />
+                  <DatePicker maxWidth="1.7976931348623157E308" GridPane.rowIndex="13" />
+                  <DatePicker maxWidth="1.7976931348623157E308" GridPane.columnIndex="1" GridPane.rowIndex="13" />
+                  <DatePicker maxWidth="1.7976931348623157E308" GridPane.columnIndex="2" GridPane.rowIndex="13" />
+                  <Label text="Fecha de última mantención" GridPane.columnIndex="1" GridPane.rowIndex="12" />
+                  <Label text="Fecha de revisión técnica" GridPane.columnIndex="2" GridPane.rowIndex="12" />
+                  <Label text="Tipo neumáticos" GridPane.columnSpan="2" GridPane.rowIndex="10" />
+                  <ChoiceBox maxWidth="1.7976931348623157E308" prefWidth="150.0" GridPane.rowIndex="11" />
+                  <ChoiceBox maxWidth="1.7976931348623157E308" prefWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="11" />
+                  <Label text="Descripción" GridPane.columnIndex="1" />
+                  <Label text="Marca" GridPane.columnIndex="2" />
+                  <Label text="Número de motor" GridPane.rowIndex="2" />
+                  <Label text="Número de serie" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                  <TextField GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                  <TextField GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                  <TextField GridPane.rowIndex="3" />
+                  <TextField GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                  <Label text="Número de chasis" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+                  <TextField GridPane.columnIndex="2" GridPane.rowIndex="3" />
+                  <TextField GridPane.columnIndex="3" GridPane.rowIndex="3" />
+                  <Label text="Horometro" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+                  <Label text="Toneladas" GridPane.rowIndex="4" />
+                  <ChoiceBox maxWidth="1.7976931348623157E308" prefWidth="150.0" GridPane.rowIndex="5" />
+                  <Label text="Ancho (cm)" GridPane.rowIndex="6" />
+                  <Label text="Largo (cm)" GridPane.rowIndex="8" />
+                  <Label text="Largo uñas (cm)" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+                  <Label text="Altura levante (cm)" GridPane.columnIndex="1" GridPane.rowIndex="8" />
+                  <TextField GridPane.rowIndex="7" />
+                  <TextField GridPane.rowIndex="9" />
+                  <TextField GridPane.columnIndex="1" GridPane.rowIndex="7" />
+                  <TextField GridPane.columnIndex="1" GridPane.rowIndex="9" />
+                  <TextField GridPane.columnIndex="2" GridPane.rowIndex="7" />
+                  <TextField GridPane.columnIndex="2" GridPane.rowIndex="9" />
+                  <Label text="Medida neumáticos delanteros" GridPane.columnIndex="2" GridPane.rowIndex="6" />
+                  <Label text="Medida neumáticos traseros" GridPane.columnIndex="2" GridPane.rowIndex="8" />
+                  <Label text="Tipo de combustible" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                  <Label text="Mástil" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+                  <ChoiceBox maxWidth="1.7976931348623157E308" prefWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                  <ChoiceBox maxWidth="1.7976931348623157E308" prefWidth="150.0" GridPane.columnIndex="2" GridPane.rowIndex="5" />
+                  <Label text="Peso (kg)" GridPane.columnIndex="3" GridPane.rowIndex="6" />
+                  <TextField GridPane.columnIndex="3" GridPane.rowIndex="7" />
+                  <MenuButton fx:id="mbtn" mnemonicParsing="false" text="Boton" GridPane.columnIndex="3" GridPane.rowIndex="5">
+                     <items>
+                        <RadioMenuItem mnemonicParsing="false" text="Tubular">
+                           <toggleGroup>
+                              <ToggleGroup fx:id="tneum" />
+                           </toggleGroup>
+                        </RadioMenuItem>
+                        <RadioMenuItem mnemonicParsing="false" text="Sólido" toggleGroup="$tneum" />
+                        <SeparatorMenuItem mnemonicParsing="false" />
+                        <RadioMenuItem mnemonicParsing="false" text="Simple">
+                           <toggleGroup>
+                              <ToggleGroup fx:id="tneum2" />
+                           </toggleGroup>
+                        </RadioMenuItem>
+                        <RadioMenuItem mnemonicParsing="false" text="Doble" toggleGroup="$tneum2" />
+                     </items>
+                  </MenuButton>
+               </children>
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+            </GridPane>
+         </children>
+      </AnchorPane>
+   </center>
+   <bottom>
+      <HBox alignment="CENTER_RIGHT" spacing="10.0">
+         <children>
+            <Button mnemonicParsing="false" text="Button" />
+            <Button mnemonicParsing="false" text="Button" />
+         </children>
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding>
+      </HBox>
+   </bottom>
+</BorderPane>
